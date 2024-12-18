@@ -372,7 +372,9 @@ getData() // no top level await... yet
   .then(() => {
     // persist data
     fs.writeFileSync(path.resolve(pathToData), JSON.stringify(data, null, 2));
-    fs.writeFileSync(path.resolve('extracted/' + fileString(now) + ".json"), JSON.stringify(extract_data(data), null, 2));
+    const extracted = extract_data(data);
+    fs.writeFileSync(path.resolve('extracted/' + fileString(now) + ".json"), JSON.stringify(extracted, null, 2));
+    fs.writeFileSync(path.resolve('extracted/latest.json'), JSON.stringify(extracted, null, 2));
   });
 
 /**
