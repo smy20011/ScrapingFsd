@@ -355,14 +355,14 @@ function extract_data(data) {
     return result;
   };
 
-  const [cmd_idx, run_idx, sr_idx, min_d_idx] = locate([484, 60, 0.817, 1679967717000]);
+  const [cmd_idx, run_idx, sr_idx, min_d_idx] = locate([484, 60, 0.817, 1679875200000]);
   return data_arr.filter(item => item.length == data_1133.length).map(d => {
     return {
       'version': d[0],
       'city_miles': parseFloat(d[cmd_idx]),
       'runs': parseInt(d[run_idx]),
       'success_rate': parseFloat(d[sr_idx]),
-      'min_date': new Date(d[min_d_idx]).toJSON(),
+      'min_date': new Date(parseInt(d[min_d_idx])).toJSON(),
     };
   });
 }
