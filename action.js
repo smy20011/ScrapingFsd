@@ -362,7 +362,7 @@ function extract_data(data) {
       'city_miles': parseFloat(d[cmd_idx]),
       'runs': parseInt(d[run_idx]),
       'success_rate': parseFloat(d[sr_idx]),
-      'min_date': new Date(d[min_d_idx]),
+      'min_date': new Date(d[min_d_idx]).toJSON(),
     };
   });
 }
