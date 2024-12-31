@@ -364,7 +364,7 @@ function extract_data(data) {
     let mttf = city_miles / failure;
     return {
       'version': d[0],
-      'min_date': new Date(parseInt(d[min_d_idx])).toJSON(),
+      'min_date': new Date(parseInt(d[min_d_idx])).toISOString(),
       success_rate,
       runs,
       failure,
