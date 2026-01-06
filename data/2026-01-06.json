@@ -1,14 +1,14 @@
 {
   "jobIds": [
-    "9cedfeaa-b446-40df-9ac9-de6e35361fa3"
+    "22f91ee9-f753-4b07-8aec-22525c3408aa"
   ],
   "results": [
     {
-      "jobId": "9cedfeaa-b446-40df-9ac9-de6e35361fa3",
+      "jobId": "22f91ee9-f753-4b07-8aec-22525c3408aa",
       "result": {
         "data": {
-          "timestamp": "2026-01-06T09:18:30.197Z",
-          "rootActivityId": "9764bccb-a941-4ee3-ba1c-4ee9e5983eb9",
+          "timestamp": "2026-01-06T11:12:04.818Z",
+          "rootActivityId": "1b255da1-50a6-4eed-b268-fd3d303a06ce",
           "descriptor": {
             "Select": [
               {
@@ -124,38 +124,38 @@
             "Version": "1.0.0",
             "Events": [
               {
-                "Id": "fcc21521-7741-401f-a6be-bd2bf5b3660b",
+                "Id": "5017b132-c251-425d-9e4d-3d9b8d3dfb0e",
                 "Name": "Execute Semantic Query",
                 "Component": "DSE",
-                "Start": "2026-01-06T09:18:30.1977941Z",
-                "End": "2026-01-06T09:18:31.0731712Z"
+                "Start": "2026-01-06T11:12:04.818264Z",
+                "End": "2026-01-06T11:12:05.7557882Z"
               },
               {
-                "Id": "802aadbb-dde5-47a8-bba7-2f69c214db36",
-                "ParentId": "fcc21521-7741-401f-a6be-bd2bf5b3660b",
+                "Id": "c5faa20e-ed50-4c99-b2e2-6ce8d2e55044",
+                "ParentId": "5017b132-c251-425d-9e4d-3d9b8d3dfb0e",
                 "Name": "Execute DAX Query",
                 "Component": "DSE",
-                "Start": "2026-01-06T09:18:30.1977941Z",
-                "End": "2026-01-06T09:18:31.0575762Z",
+                "Start": "2026-01-06T11:12:04.818264Z",
+                "End": "2026-01-06T11:12:05.7401881Z",
                 "Metrics": {
                   "RowCount": 86
                 }
               },
               {
-                "Id": "6138384E-91D4-40C5-B839-4E322D8F3920",
-                "ParentId": "802aadbb-dde5-47a8-bba7-2f69c214db36",
+                "Id": "475EC4CC-522A-4F15-B9DE-D9DB78350715",
+                "ParentId": "c5faa20e-ed50-4c99-b2e2-6ce8d2e55044",
                 "Name": "Execute Query",
                 "Component": "AS",
-                "Start": "2026-01-06T09:18:30.297Z",
-                "End": "2026-01-06T09:18:30.987Z"
+                "Start": "2026-01-06T11:12:04.85Z",
+                "End": "2026-01-06T11:12:05.663Z"
               },
               {
-                "Id": "7BD9824B-84E1-45AC-A415-F2A6184A186A",
-                "ParentId": "6138384E-91D4-40C5-B839-4E322D8F3920",
+                "Id": "1665996C-592F-44A3-A576-C64ED0851730",
+                "ParentId": "475EC4CC-522A-4F15-B9DE-D9DB78350715",
                 "Name": "Serialize Rowset",
                 "Component": "AS",
-                "Start": "2026-01-06T09:18:30.987Z",
-                "End": "2026-01-06T09:18:30.987Z"
+                "Start": "2026-01-06T11:12:05.66Z",
+                "End": "2026-01-06T11:12:05.663Z"
               }
             ]
           },
